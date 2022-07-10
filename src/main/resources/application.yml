@@ -1,6 +1,16 @@
 micronaut:
   application:
     name: mnQuickstart
+  server:
+    port: ${SERVER_PORT:8081}
+hello:
+  world:
+    message: "Hello from application.yml!"
+    translation:
+      de: "Hallo Welt"
+      en: "Hello World"
+      fr: "Bonjour tout le monde"
+      hu: "Szevasztok öcséim"
 netty:
   default:
     allocator:
